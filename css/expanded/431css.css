@@ -1,11 +1,21 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+img {
+  vertical-align: bottom;
+  border: 0;
+}
+
+li {
+  list-style: none;
 }
 
 body, html {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
   position: relative;
@@ -25,6 +35,42 @@ body > header {
   background: olive;
 }
 
+body > header current-title {
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > header current-title > button:first-of-type {
+  width: 54px;
+  height: 54px;
+  border: 0;
+  margin-right: 4px;
+}
+
+body > header current-title h1 {
+  font-size: 20px;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > header current-title h1 > .material-icons {
+  margin-right: 4px;
+}
+
 body > footer {
   position: fixed;
   bottom: 0;
@@ -39,6 +85,7 @@ body > current-body {
   position: fixed;
   top: 0;
   left: 0;
+  padding: 54px 0 40px;
   width: 100%;
   height: 100%;
   z-index: 97;
