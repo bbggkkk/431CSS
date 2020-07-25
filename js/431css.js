@@ -1,9 +1,11 @@
 (function(obj){
     
-    Object.prototype = Object.create()
-    obj.prototype.test = function(){
-        console.log(this);
-    }
+    var a = document.links;
+    console.log(a);
+    // Object.prototype = Object.create()
+    // obj.prototype.test = function(){
+    //     console.log(this);
+    // }
 
     function setAniRepeat (ele,cls) {
         // ele.addEventListener("mousedown",function(e){
