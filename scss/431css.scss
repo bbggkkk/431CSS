@@ -47,15 +47,20 @@ body {
 $i:0;
 @for $i from 0 to 201 {
     
-    @if $i%5 == 0 or $i%2 == 0 or $i == 0{
+    @if $i%5 == 0 or $i%2 == 0 {
         .pd#{$i}  { padding:#{$i}px !important; }
         .mg#{$i}  { margin:#{$i}px !important; }
         .w#{$i}p { width:#{$i}% !important; }
         .h#{$i}p { height:#{$i}% !important; }
-        @include tblr("m","margin",$i,"px");
-        @include tblr("p","padding",$i,"px");
 
         .radius#{$i} { border-radius:#{$i}px; }
+    }
+}
+@for $i from 0 to 201 {
+    
+    @if $i%5 == 0 or $i%2 == 0 {
+        @include tblr("m","margin",$i,"px");
+        @include tblr("p","padding",$i,"px");
     }
 }
 @for $i from 0 to 1001 {
@@ -376,6 +381,13 @@ body::-webkit-scrollbar {
         background:transparent;
         border:1px solid nth($gray,2);
         box-shadow:none;
+    }
+
+    &.ui-big {
+        height:48px;
+    }
+    &.ui-small {
+        height:24px;
     }
 
 
