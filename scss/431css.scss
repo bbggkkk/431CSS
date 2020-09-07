@@ -169,47 +169,41 @@ $i:0;
         border: 0;
         padding: 0 !important;
         opacity: 0 !important;
-
-        > span {
-            vertical-align: middle;
-            
-            &:last-child {
-                color: nth($gray,7);
-            }
-            &:focus + span {
-                border-color: nth($blue,7);
-            }
-            &:checked + span {
-                border: 1px solid nth($gray,9);
-                background: nth($gray,9);
-            }
-            ~ span .on {
-                display:none;
-            }
-            ~ span .off {
-                display:inline;
-            }
-            &:checked ~ span .on {
-                display:inline;
-            }
-            &:checked ~ span .off {
-                display:none;
-            }
-            &:checked + span:before {
-                width: 150%;
-                height: 150%;
-                border-radius: 8px;
-            }&:checked + span:after {
-                width: 12px;
-                height: 16px;
-                top: 50%;
-            }
-            &:checked ~ span:last-child {
-                color: $dark;
-            }
-            &[type="radio"] + span {
-                border-radius: 100%;
-            }
+        
+        
+        &:focus + span {
+            border-color: nth($blue,7);
+        }
+        &:checked + span {
+            border: 1px solid nth($gray,9);
+            background: nth($gray,9);
+        }
+        ~ span .on {
+            display:none;
+        }
+        ~ span .off {
+            display:inline;
+        }
+        &:checked ~ span .on {
+            display:inline;
+        }
+        &:checked ~ span .off {
+            display:none;
+        }
+        &:checked + span:before {
+            width: 150%;
+            height: 150%;
+            border-radius: 8px;
+        }&:checked + span:after {
+            width: 12px;
+            height: 16px;
+            top: 50%;
+        }
+        &:checked ~ span:last-child {
+            color: $dark;
+        }
+        &[type="radio"] + span {
+            border-radius: 100%;
         }
 
         + span {
@@ -225,7 +219,7 @@ $i:0;
             transition: all 0.4s;
             box-sizing:border-box;
             
-
+    
             &:before {
                 content: "";
                 width: 0;
@@ -258,6 +252,15 @@ $i:0;
                 8px 12px
                 );
             }
+            
+        }
+    }
+
+    > span {
+        vertical-align: middle;
+        
+        &:last-child {
+            color: nth($gray,7);
         }
     }
 }
