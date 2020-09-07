@@ -11760,39 +11760,6 @@ body {
   display: flex;
 }
 
-.ui-table .table-head .row {
-  background: #fff;
-}
-
-.ui-table.stripe .table-body .row {
-  background: #fff;
-}
-
-.ui-table.stripe .table-body .row:hover {
-  background: #e6e6e6;
-}
-
-.ui-table.stripe .table-body .row:nth-child(2n+1) {
-  background: #f7f7f7;
-}
-
-.ui-table.stripe .table-body .row:nth-child(2n+1):hover {
-  background: #dedede;
-}
-
-.ui-table .table-head {
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1;
-  top: 10px;
-}
-
-.ui-table .table-head .row, .ui-table.stripe .table-head .row {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-  background: #fff;
-}
-
 .ui-table .row .col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11819,5 +11786,35 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+}
+
+.ui-table .table-head {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 10px;
+}
+
+.ui-table .table-head .row {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+.ui-table.stripe .table-body .row {
+  background: #fff;
+}
+
+.ui-table.stripe .table-body .row:hover {
+  background: #e6e6e6;
+}
+
+.ui-table.stripe .table-body .row:nth-child(2n+1) {
+  background: #f7f7f7;
+}
+
+.ui-table.stripe .table-body .row:nth-child(2n+1):hover {
+  background: #dedede;
 }
 /*# sourceMappingURL=431css.css.map */

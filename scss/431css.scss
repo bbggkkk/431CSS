@@ -109,18 +109,41 @@ $i:0;
     .row {
         width:100%;
         display:flex;
+        .col {
+            display:flex;
+            flex:1 1;
+            justify-content:center;
+            align-items:center;
+            padding:10px;
+            border-top:1px solid #eee;
+            border-right:1px solid #eee;
+            &:last-child {
+                border-right:0;
+            }
+            &[class*="w"] {
+                flex:none;
+            }
+        }
     }
 
-    .table-head .row{
-        background:$white;
+    .table-head {
+        position:sticky;
+        z-index:1;
+        top:10px;
+        .row{
+            background:$white;
+            border-bottom:1px solid #eee;
+            margin-bottom:5px;
+            background:#fff;
+        }
     }
-    &.stripe .table-body .row{
+    &.stripe .table-body .row {
         background:$white;
         &:hover {
             background:darken($white,10%);
         }
     }
-    &.stripe .table-body .row:nth-child(2n+1){
+    &.stripe .table-body .row:nth-child(2n+1) {
         background:$white1;
         &:hover {
             background:darken($white1,10%);
@@ -131,28 +154,23 @@ $i:0;
 // .ui-table .table-body .row:hover,.ui-table.stripe .table-body .row:hover {
 // background:#f2f2f2;
 // }
-.ui-table .table-head {
-position:sticky;
-z-index:1;
-top:10px;
-}
-.ui-table .table-head .row,.ui-table.stripe .table-head .row {
-border-bottom:1px solid #eee;
-margin-bottom:5px;
-background:#fff;
-}
-.ui-table .row .col {
-display:flex;
-flex:1 1;
-justify-content:center;
-align-items:center;
-padding:10px;
-border-top:1px solid #eee;
-border-right:1px solid #eee;
-}
-.ui-table .row .col:last-child {
-border-right:0;
-}
-.ui-table .row .col[class*="w"] {
-flex:none;
-}
+// .ui-table .table-head .row,.ui-table.stripe .table-head .row {
+// border-bottom:1px solid #eee;
+// margin-bottom:5px;
+// background:#fff;
+// }
+// .ui-table .row .col {
+// display:flex;
+// flex:1 1;
+// justify-content:center;
+// align-items:center;
+// padding:10px;
+// border-top:1px solid #eee;
+// border-right:1px solid #eee;
+// }
+// .ui-table .row .col:last-child {
+// border-right:0;
+// }
+// .ui-table .row .col[class*="w"] {
+// flex:none;
+// }
