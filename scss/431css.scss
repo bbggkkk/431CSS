@@ -205,6 +205,69 @@ $i:0;
         border:1px solid nth($gray,2);
         box-shadow:none;
     }
+
+
+    &.ui-btn-on {
+        background:#fff;
+        color:#1167bd;
+    }
+    &.ui-btn-search {
+        background: #fff;
+        color: #333;
+    }
+    &.ui-btn-danger {
+        background: #fff;
+        color: #e63d3d;
+    }
+    &.ui-btn-success {
+        background: #fff;
+        color: #068906;
+    }
+    &.ui-btn-warn {
+        background: #fff;
+        color: #9d6e04;
+    }
+    &.ui-btn-ssem {
+        background: #fff;
+        color: #dc6a23;
+    }
+    &.ui-btn-transparent {
+        background:transparent;
+        color:#333;
+    }
+    &.ui-btn-basic {
+        background:#fff;
+        color:#333;
+    }
+
+    &.ui-btn-onF {
+        background: #0657a2;
+        color: #fff;
+    }
+    &.ui-btn-dangerF {
+        background: #e63d3d;
+        color: #fff;
+    }
+    &.ui-btn-successF {
+        background: #068906;
+        color: #fff;
+    }
+    &.ui-btn-warnF {
+        background: #f3c527;
+        color: #333;
+    }
+    &.ui-btn-ssemF {
+        background: #dc6a23;
+        color: #fff;
+    }
+    &.ui-btn-glass {
+        background:rgba(0,0,0,0.06);
+        color:#333;
+    }
+    &.ui-btn-basicF {
+        background:#ccc;
+        color:#333;
+    }
 }
 
 .click-effect {
