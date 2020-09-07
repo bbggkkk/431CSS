@@ -202,7 +202,8 @@ $i:0;
 
     &.border {
         background:transparent;
-        border:1px solid nth($gray,10);
+        border:1px solid nth($gray,2);
+        box-shadow:none;
     }
 }
 
