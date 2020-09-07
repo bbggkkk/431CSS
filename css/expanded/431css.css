@@ -21648,6 +21648,58 @@ body::-webkit-scrollbar {
   white-space: nowrap;
 }
 
+/* *** Font > Weigth *** */
+.t-black {
+  font-weight: 900 !important;
+}
+
+.t-bold {
+  font-weight: 700 !important;
+}
+
+.t-medium {
+  font-weight: 500 !important;
+}
+
+.t-normal {
+  font-weight: 400 !important;
+}
+
+.t-light {
+  font-weight: 300 !important;
+}
+
+.t-thin {
+  font-weight: 100 !important;
+}
+
+/* *** Font > Weigth *** */
+/* *** Font > Size *** */
+.t-basic {
+  font-size: 16px !important;
+}
+
+.t-small {
+  font-size: 12px !important;
+}
+
+.t-big {
+  font-size: 20px !important;
+}
+
+.t-bigger {
+  font-size: 24px !important;
+}
+
+.t-huge {
+  font-size: 32px !important;
+}
+
+.t-giant {
+  font-size: 40px !important;
+}
+
+/* *** Font > Size *** */
 .lh1em {
   line-height: 1em;
 }
