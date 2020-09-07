@@ -63,8 +63,8 @@ $i:0;
         .w#{$i} { width:#{$i}px !important; }
         .h#{$i} { height:#{$i}px !important; }
         .mxw#{$i} { max-width:#{$i}px !important; }
-        .mxw#{$i} { max-width:#{$i}px !important; }
-        .mnh#{$i} { min-height:#{$i}px !important; }
+        .mxh#{$i} { max-height:#{$i}px !important; }
+        .mnw#{$i} { min-width:#{$i}px !important; }
         .mnh#{$i} { min-height:#{$i}px !important; }
     }
 }
