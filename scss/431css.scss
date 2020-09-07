@@ -175,32 +175,32 @@ body::-webkit-scrollbar {
 .flex-box       {display:-webkit-flex; display:flex; flex-wrap:wrap;
     justify-content:space-between; align-items:flex-start;}
 .flex-col
-                {flex-direction:column;}
+                {flex-direction:column !important;}
 .flex-middle
-                {align-items:center;}
+                {align-items:center !important;}
 .flex-bottom
-                {align-items:flex-end;}
+                {align-items:flex-end !important;}
 .flex-left
-                {justify-content:flex-start;}
+                {justify-content:flex-start !important;}
 .flex-right
-                {justify-content:flex-end;}
+                {justify-content:flex-end !important;}
 .flex-center
-                {justify-content:center;}
+                {justify-content:center !important;}
 .flex-between
-                {justify-content:space-between;}
+                {justify-content:space-between !important;}
 
-.flex-nowrap    {flex-wrap:nowrap;}
+.flex-nowrap    {flex-wrap:nowrap !important;}
 
-.self-top       {align-self:flex-start;}
-.self-bottom    {align-self:flex-end;}
+.self-top       {align-self:flex-start !important;}
+.self-bottom    {align-self:flex-end !important;}
 
-.iflex-box      {display:inline-flex;}
+.iflex-box      {display:inline-flex !important;}
 
-.t-center       {text-align:center;}
-.t-left         {text-align:left;}
-.t-right        {text-align:right;}
+.t-center       {text-align:center !important;}
+.t-left         {text-align:left !important;}
+.t-right        {text-align:right !important;}
 
-.t-nowrap       {white-space:nowrap;}
+.t-nowrap       {white-space:nowrap !important;}
 
 /* *** Font > Weigth *** */
 .t-black        {font-weight:900 !important;}
