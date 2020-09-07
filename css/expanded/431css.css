@@ -11823,6 +11823,7 @@ body {
 }
 
 .ui-btn {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11845,6 +11846,7 @@ body {
   position: relative;
   text-align: center;
   vertical-align: middle;
+  overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);

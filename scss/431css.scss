@@ -159,6 +159,7 @@ $i:0;
 
 //ui-btn
 .ui-btn {
+    cursor:pointer;
     display:flex;
     justify-content:center;
     align-content:center;
@@ -175,6 +176,7 @@ $i:0;
     position:relative;
     text-align:center;
     vertical-align:middle;
+    overflow:hidden;
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
     -webkit-transform:translate3d(0, 0, 0);
@@ -197,7 +199,6 @@ $i:0;
     width:2px; height:2px; background:currentColor; opacity:0.2;
     position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
 }
-  
 @keyframes click-effect {
     0%  {width:0; height:0; opacity:0.3;}
     100%  {width:500px; height:500px; opacity:0;}
