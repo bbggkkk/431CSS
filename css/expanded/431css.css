@@ -11875,12 +11875,13 @@ body {
 
 .ui-btn.flat {
   font-weight: normal;
-  -webkit-box-shadow: 0;
-          box-shadow: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .ui-btn.border {
-  border: 1px solid #33393F;
+  background: transparent;
+  border: 1px solid #171a1c;
 }
 
 .click-effect {

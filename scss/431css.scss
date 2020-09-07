@@ -197,11 +197,12 @@ $i:0;
 
     &.flat {
         font-weight:normal;
-        box-shadow:0;
+        box-shadow:none;
     }
 
     &.border {
-        border:1px solid $dark;
+        background:transparent;
+        border:1px solid nth($gray,10);
     }
 }
 
