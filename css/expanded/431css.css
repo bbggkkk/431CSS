@@ -11843,6 +11843,8 @@ body {
   white-space: nowrap;
   width: auto;
   position: relative;
+  text-align: center;
+  vertical-align: middle;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -11860,6 +11862,47 @@ body {
           transform: scale(0.95) translateY(5%);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.click-effect {
+  border-radius: 100%;
+  -webkit-animation: click-effect 1.2s;
+          animation: click-effect 1.2s;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes click-effect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.3;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes click-effect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.3;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
 }
 
 .checkbox {
