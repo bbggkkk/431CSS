@@ -19295,4 +19295,70 @@ body > current-body {
 .pr998 {
   padding-right: 998px;
 }
+
+.ui-table {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.ui-table .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui-table .row:hover {
+  background: #f2f2f2;
+}
+
+.ui-table.stripe .row:nth-child(2n+1) {
+  background: #fafafa;
+}
+
+.ui-table.stripe .row:nth-child(2n) {
+  background: #fff;
+}
+
+.ui-table .table-head {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 10px;
+}
+
+.ui-table .table-head .row, .ui-table.stripe .table-head .row {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+.ui-table .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.ui-table .row .col:last-child {
+  border-right: 0;
+}
+
+.ui-table .row .col[class*="w"] {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
 /*# sourceMappingURL=431css.css.map */

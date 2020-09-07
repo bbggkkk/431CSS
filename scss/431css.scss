@@ -108,3 +108,58 @@ $maxLength:1000;
         @include tblr("padding","p",$i);
     }
 }
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////    컴포넌트    ///////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+.ui-table {
+    width:100%;
+    position:relative;
+    border-bottom:1px solid #eee;
+    .row {
+        width:100%;
+        display:flex;
+    }
+    .row:hover {
+        background:#f2f2f2;
+    }
+    &.stripe .row:nth-child(2n+1) {
+        background:#fafafa;
+    }
+    &.stripe .row:nth-child(2n) {
+        background:#fff;
+    }
+}
+
+// .ui-table .table-body .row:hover,.ui-table.stripe .table-body .row:hover {
+// background:#f2f2f2;
+// }
+.ui-table .table-head {
+position:sticky;
+z-index:1;
+top:10px;
+}
+.ui-table .table-head .row,.ui-table.stripe .table-head .row {
+border-bottom:1px solid #eee;
+margin-bottom:5px;
+background:#fff;
+}
+.ui-table .row .col {
+display:flex;
+flex:1 1;
+justify-content:center;
+align-items:center;
+padding:10px;
+border-top:1px solid #eee;
+border-right:1px solid #eee;
+}
+.ui-table .row .col:last-child {
+border-right:0;
+}
+.ui-table .row .col[class*="w"] {
+flex:none;
+}
