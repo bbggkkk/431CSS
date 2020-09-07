@@ -124,25 +124,26 @@ $maxLength:1000;
         width:100%;
         display:flex;
     }
-    .row:hover {
-        background:#f2f2f2;
-    }
     &.stripe .row:nth-child(2n+1) {
         background:#fafafa;
     }
     &.stripe .row:nth-child(2n) {
         background:#fff;
     }
+    .row:hover {
+        background:#f2f2f2;
+    }
+
+    .table-head {
+        position:sticky;
+        z-index:1;
+        top:10px;
+    }
 }
 
 // .ui-table .table-body .row:hover,.ui-table.stripe .table-body .row:hover {
 // background:#f2f2f2;
 // }
-.ui-table .table-head {
-position:sticky;
-z-index:1;
-top:10px;
-}
 .ui-table .table-head .row,.ui-table.stripe .table-head .row {
 border-bottom:1px solid #eee;
 margin-bottom:5px;
