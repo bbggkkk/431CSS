@@ -11760,16 +11760,24 @@ body {
   display: flex;
 }
 
-.ui-table.stripe .row:nth-child(2n+1) {
-  background: #f7f7f7;
-}
-
-.ui-table.stripe .row:nth-child(2n) {
+.ui-table .table-head .row {
   background: #fff;
 }
 
-.ui-table .table-body .row:hover, .ui-table.stripe .table-body .row:hover {
-  background: #f2f2f2;
+.ui-table.stripe .table-body .row {
+  background: #fff;
+}
+
+.ui-table.stripe .table-body .row:hover {
+  background: #e6e6e6;
+}
+
+.ui-table.stripe .table-body .row:nth-child(2n+1) {
+  background: #f7f7f7;
+}
+
+.ui-table.stripe .table-body .row:nth-child(2n+1):hover {
+  background: #dedede;
 }
 
 .ui-table .table-head {
