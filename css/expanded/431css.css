@@ -21856,6 +21856,30 @@ body::-webkit-scrollbar {
   border-right: 2px solid #DDD;
 }
 
+.bg-white0 {
+  background: #fafafa;
+}
+
+.bg-white1 {
+  background: #f7f7f7;
+}
+
+.bg-white2 {
+  background: #f2f2f2;
+}
+
+.bg-white3 {
+  background: #eee;
+}
+
+.bg-white4 {
+  background: #dfdfdf;
+}
+
+.bg-white5 {
+  background: #e6e6e6;
+}
+
 .hide {
   display: none !important;
 }
