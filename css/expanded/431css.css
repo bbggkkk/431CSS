@@ -11817,4 +11817,121 @@ body {
 .ui-table.stripe .table-body .row:nth-child(2n+1):hover {
   background: #dedede;
 }
+
+.checkbox {
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  display: inline-block;
+}
+
+.checkbox > input {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+  border: 0;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+.checkbox > input > span {
+  vertical-align: middle;
+}
+
+.checkbox > input > span:last-child {
+  color: #5b6671;
+}
+
+.checkbox > input > span:focus + span {
+  border-color: #1167bd;
+}
+
+.checkbox > input > span:checked + span {
+  border: 1px solid #2d3339;
+  background: #2d3339;
+}
+
+.checkbox > input > span ~ span .on {
+  display: none;
+}
+
+.checkbox > input > span ~ span .off {
+  display: inline;
+}
+
+.checkbox > input > span:checked ~ span .on {
+  display: inline;
+}
+
+.checkbox > input > span:checked ~ span .off {
+  display: none;
+}
+
+.checkbox > input > span:checked + span:before {
+  width: 150%;
+  height: 150%;
+  border-radius: 8px;
+}
+
+.checkbox > input > span:checked + span:after {
+  width: 12px;
+  height: 16px;
+  top: 50%;
+}
+
+.checkbox > input > span:checked ~ span:last-child {
+  color: #33393F;
+}
+
+.checkbox > input > span[type="radio"] + span {
+  border-radius: 100%;
+}
+
+.checkbox > input + span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #33393f;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.checkbox > input + span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #2d3339;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.checkbox > input + span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translate(-50%, -60%) rotate(45deg) scale(0.75);
+          transform: translate(-50%, -60%) rotate(45deg) scale(0.75);
+  clip-path: polygon(8px 0, 12px 0, 12px 16px, 0 16px, 0 12px, 8px 12px);
+  -webkit-clip-path: polygon(8px 0, 12px 0, 12px 16px, 0 16px, 0 12px, 8px 12px);
+}
 /*# sourceMappingURL=431css.css.map */
