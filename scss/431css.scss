@@ -107,6 +107,19 @@ $i:0;
 
 /* ***** Layout ***** */
 //std
+::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0.05);
+}
+body::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .clearfix:after {content:""; clear:both; display:block; height:0;}
 .dis-block      {display:block !important;}
 .dis-flex       {display:-webkit-flex !important; display:flex !important;}

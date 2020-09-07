@@ -21365,6 +21365,22 @@ body {
 }
 
 /* ***** Layout ***** */
+::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 .clearfix:after {
   content: "";
   clear: both;
