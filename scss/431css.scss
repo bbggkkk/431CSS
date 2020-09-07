@@ -252,9 +252,6 @@ $i:0;
                 8px 12px
                 );
             }
-            + span {
-                margin-left:10px;
-            }
             
         }
     }
@@ -264,6 +261,7 @@ $i:0;
         
         &:last-child {
             color: nth($gray,7);
+            margin-left:10px;
         }
     }
 }
