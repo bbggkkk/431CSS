@@ -11927,6 +11927,10 @@ body {
   -webkit-clip-path: polygon(8px 0, 12px 0, 12px 16px, 0 16px, 0 12px, 8px 12px);
 }
 
+.checkbox > input + span + span {
+  margin-left: 10px;
+}
+
 .checkbox > span {
   vertical-align: middle;
 }
