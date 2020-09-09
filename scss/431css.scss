@@ -496,8 +496,8 @@ body::-webkit-scrollbar {
             border-color: nth($blue,7);
         }
         &:checked + span {
-            border: 1px solid nth($gray,9);
-            background: nth($gray,9);
+            border: 1px solid nth($gray,3);
+            background: nth($gray,3);
         }
         ~ span .on {
             display:none;
