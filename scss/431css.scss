@@ -496,8 +496,8 @@ body::-webkit-scrollbar {
             border-color: nth($blue,7);
         }
         &:checked + span {
-            border: 1px solid nth($gray,3);
-            background: nth($gray,3);
+            border: 1px solid nth($gray,8);
+            background: nth($gray,8);
         }
         ~ span .on {
             display:none;
@@ -545,7 +545,7 @@ body::-webkit-scrollbar {
                 content: "";
                 width: 0;
                 height: 0;
-                background: nth($gray,3);
+                background: nth($gray,8);
                 position: absolute;
                 top: 50%;
                 left: 50%;

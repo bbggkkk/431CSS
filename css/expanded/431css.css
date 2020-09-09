@@ -22206,8 +22206,8 @@ body::-webkit-scrollbar {
 }
 
 .checkbox > input:checked + span {
-  border: 1px solid #2d3339;
-  background: #2d3339;
+  border: 1px solid #444d55;
+  background: #444d55;
 }
 
 .checkbox > input ~ span .on {
@@ -22266,7 +22266,7 @@ body::-webkit-scrollbar {
   content: "";
   width: 0;
   height: 0;
-  background: #2d3339;
+  background: #444d55;
   position: absolute;
   top: 50%;
   left: 50%;
