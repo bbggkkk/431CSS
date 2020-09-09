@@ -21967,14 +21967,11 @@ body::-webkit-scrollbar {
           flex: none;
 }
 
-.ui-table .table-head {
+.ui-table .table-head .row {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   top: 10px;
-}
-
-.ui-table .table-head .row {
   background: #fff;
   border-bottom: 1px solid #eee;
   margin-bottom: 5px;
