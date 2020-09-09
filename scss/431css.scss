@@ -318,10 +318,10 @@ body::-webkit-scrollbar {
     }
 
     .table-head {
-        position:sticky;
-        z-index:1;
-        top:10px;
         .row{
+            position:sticky;
+            z-index:1;
+            top:10px;
             background:$white;
             border-bottom:1px solid #eee;
             margin-bottom:5px;
