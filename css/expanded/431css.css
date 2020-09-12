@@ -12,7 +12,7 @@ img {
   text-align: bottom;
 }
 
-body, html, ol, ul, li, a, img, button, input {
+ol, ul, li, a, img, button, input {
   all: unset;
 }
 

@@ -10,24 +10,82 @@
     <!-- <link rel='stylesheet' href='./css/import.css'> -->
     <title>431CSS</title>
 </head>
-<body>
-    <header>
-        <current-title>
-            <button class="material-icons ui-btn">person</button>
-            <h1>
-                <span class="material-icons">person</span>
-                TITLE
-            </h1>
-            <button class="material-icons ui-btn">inbox</button>
-        </current-title>
-    </header>
-    <current-body>
 
-        <div    class="ui-btn ui-btn-on"    style="position:fixed; top:50%; left:50%;"
-                tabindex="0">버튼버튼</div>
-    </current-body>
-    <footer></footer>
+<style>
+    body,html {
+        width:100%; height:100%;
+    }
+    #canvWrap {
+        position:fixed; top:50%; left:50%;
+        transform:translate(-50%,-50%);
+        border-radius:48px; cursor:pointer;
+        box-shadow:0 16px 32px rgba(0,0,0,0.2);
+        transition-duration: 0.3s;
+        transition-property: box-shadow transform;
+    }
+    #canvWrap:active {
+        transform:translate(-50%,-50%) scale(0.95);
+        box-shadow:0 2px 4px rgba(0,0,0,0.2);
+    }
+</style>
+
+<body   class="bg-gray500"  onload="draw()">
+    <div class="hide">
+        <header>
+            <current-title>
+                <button class="material-icons ui-btn">person</button>
+                <h1>
+                    <span class="material-icons">person</span>
+                    TITLE
+                </h1>
+                <button class="material-icons ui-btn">inbox</button>
+            </current-title>
+        </header>
+        <current-body>
+    
+            <div    class="ui-btn ui-btn-on"    style="position:fixed; top:50%; left:50%;"
+                    tabindex="0">버튼버튼</div>
+        </current-body>
+        <footer></footer>
+    </div>
+
+    <div    id="canvWrap"   class="dis-inblock pd50 t-big bg-white">
+        <canvas id="canvas"   class="dis-block radius8"
+                              width="300" height="300"></canvas>
+    </div>
+    
 
     <script src="./js/431css.js"></script>
+    <script>
+        function draw() {
+            let canvas = document.getElementById("canvas");
+            if (canvas.getContext) {
+                let ctx = canvas.getContext("2d");
+
+                ctx.fillStyle = "rgb(200,0,0)";
+                // ctx.strokeStyle="rgb(30,30,30)";
+                // ctx.fillRect (0, 0, 50, 50);
+                // ctx.clearRect (10,10,30,30);
+                // ctx.strokeRect (20,20,10,10);
+
+                // ctx.fillStyle = "rgb(200,200,200)";
+                ctx.strokeStyle="rgb(200,200,200)";
+                ctx.beginPath();
+                ctx.moveTo(0,100);
+                ctx.lineTo(100,100);
+                ctx.lineTo(200,200);
+                ctx.lineTo(100,200);
+                ctx.lineTo(0,100);
+                ctx.lineWidth = 1;
+                ctx.fill();
+
+                // ctx.fillStyle = "rgb(200,0,0)";
+                // ctx.fillRect(50,100,20,200);
+                // ctx.fillStyle = "rgb(200,0,0)";
+                // ctx.fillRect(80,150,20,150);
+                
+            }
+        }
+    </script>
 </body>
 </html>
