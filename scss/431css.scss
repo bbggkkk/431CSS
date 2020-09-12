@@ -103,9 +103,11 @@ $i:0;
 /* 배경 컬러 */
 @include wbdColor("bg","background");
 @include wbdColor("bgc","background-color");
+@include wbdColor("bdc","border-color");
 @for $ii from 1 to length($colorVar) {
     @include cssColor(nth($colorVar,$ii),$colorName,$ii,"bg","background");
     @include cssColor(nth($colorVar,$ii),$colorName,$ii,"bgc","background-color");
+    @include cssColor(nth($colorVar,$ii),$colorName,$ii,"bdc","border-color");
 }
 
 @for $i from 1 to 10 {
